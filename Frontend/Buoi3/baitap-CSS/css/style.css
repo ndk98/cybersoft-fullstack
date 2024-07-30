@@ -1,0 +1,259 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* HEADER */
+
+header {
+    padding: 20px 150px;
+}
+
+.logo i {
+    padding: 10px;
+    border-radius: 50%;
+    color: #FDC800;
+    background-color: #002145;
+}
+
+.logo h1 {
+    display: inline-block;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: left;
+}
+
+.navigation ul li {
+    padding: 10px 20px;
+    margin-right: 20px;
+}
+
+/* CAROUSEL */
+
+#carousel {
+    height: 600px;
+    background-image: url('../images/2.jpg');
+    background-size: cover;
+    background-position: top;
+}
+
+/* INTRO */
+#intro {
+    display: flex;
+    padding: 40px 120px;
+}
+
+#intro .intro__content {
+    padding: 10px 50px;
+    line-height: 1.4;
+}
+
+#intro .intro__content h2, #intro .intro__content p {
+    margin-bottom: 20px;
+}
+
+#intro .intro__content p {
+    color: #797979;
+}
+
+#intro .intro__content button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    border: 0;
+    border-radius: 5px;
+    color: #002145;
+    font-weight: bold;
+    background-color: #FDC800;
+}
+
+#intro .intro__img img {
+   border-radius: 5px;
+}
+
+/* SUMMARY */
+
+#summary {
+    background-color: #F6F6F6;
+    padding: 50px 120px;
+}
+
+#summary ul {
+    display: flex;
+}
+
+#summary ul li {
+    flex: 1;
+    display: flex;
+    color: #212529;
+}
+
+#summary ul li span.number {
+    font-size: 40px;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+#summary ul li span.text {
+    padding-top: 5px;
+}
+
+/* CATEGORY */
+
+#category {
+    padding: 120px;
+}
+
+#category ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#category ul li {
+    flex: 0 0 calc(25% - 20px);
+    text-align: center;
+    color: #ffffff;
+    background-color: #002145;
+    margin-bottom: 20px;
+    padding: 25px 0;
+}
+
+#category ul li i {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+/* POST-EVENT */
+
+#post-event {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 120px;
+    background-color: #F6F6F6;
+}
+
+#post-event h2 {
+    margin-bottom: 40px;
+}
+
+#post-event button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    border: 0;
+    border-radius: 5px;
+    color: #002145;
+    font-weight: bold;
+    background-color: #FDC800;
+    float: right;
+}
+
+#post-event .posts, #post-event .events {
+    flex: 0 0 calc(50% - 20px);
+}
+
+#post-event .posts ul hr {
+    color: #939393;
+    padding: 0 20px;
+}
+
+#post-event .posts .post-content {
+    display: flex;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+#post-event .posts .post-content img {
+    width: 120px;
+    border-radius: 5px;
+}
+
+#post-event .posts .post-content .post-detail {
+    padding: 0 20px;
+}
+
+#post-event .posts .post-content .post-detail .date {
+    color: #939393;
+    padding: 10px 0;
+}
+
+#post-event .events ul li {
+    margin-bottom: 20px;
+}
+
+#post-event .events .event-content {
+    display: flex;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+#post-event .events .event-content .calendar {
+    text-align: center;
+}
+
+#post-event .events .event-content .calendar .day-month p {
+    background-color: #FDC800;
+    padding: 15px;
+}
+
+#post-event .events .event-content .calendar .year {
+    background-color: #002145;
+    color: #ffffff;
+    padding: 5px 15px;
+}
+
+#post-event .events .event-content .calendar .day {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#post-event .events .event-content .event-detail {
+    padding: 0 20px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #002145;
+    padding: 60px 120px;
+}
+
+footer .footer-navigation {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+footer .footer-navigation .nav-item {
+    flex: 1;
+    color: #ffffff;
+    line-height: 1.8;
+}
+
+footer .footer-navigation .nav-item h3 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+footer .footer-navigation .nav-item i {
+    color: #FDC800;
+    margin-right: 5px;
+}
+
+footer .footer-navigation .nav-item a {
+    color: #ffffff;
+}
+
+footer .copyright {
+    color: #ffffff;
+    margin: 30px 0;
+}
