@@ -59,6 +59,7 @@ header {
     position: fixed;
     z-index: 100;
     width: 100%;
+    position: fixed;
 }
 
 .header__content {
@@ -115,10 +116,6 @@ header {
 .carousel__content p {
     font-size: 1.1rem;
     padding: 23px 0;
-}
-
-.carousel button:hover {
-    animation: upDown3 1s linear 0s infinite;
 }
 
 /* ------------------ INTRO ------------------- */
@@ -465,35 +462,246 @@ header {
     border-color: #ff0e83;
 }
 
-@keyframes upDown {
-    0% {
-
-    }
-
-    50% {
-        transform: translateY(-20px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
+/* ---------------- FEEDBACK ------------------ */
+.feedback {
+    background-image: url('../img/cc1.jpg');
+    background-size: cover;
+    padding: 70px 0;
 }
 
-@keyframes upDown2 {
-    from {
-        transform: translateY(0);
-    }
-    to {
-        transform: translateY(50px);
-    }
+.feedback h2 {
+    color: #ffffff;
 }
 
-@keyframes upDown3 {
-    0% {
-        transform: translateY(0);
-    }
+.feedback__content {
+    width: 75%;
+    margin: 0 auto;
+    border: 3px solid #ff0e83;
+    text-align: center;
+    background-color: rgba(255,255,255,0.5);
+    padding: 32px;
+}
 
-    100% {
-        transform: translateY(50px);
-    }
+.feedback__content i {
+    font-size: 1.3rem;
+    color: #2cbeff;
+    padding: 0 18px;
+}
+
+.feedback__content p {
+    line-height: 30px;
+    letter-spacing: 1.3px;
+}
+
+.feedback__content .feedback__name {
+    color: #ffffff;
+}
+
+.feedback__content .owl-theme .owl-dots .owl-dot.active span {
+    background-color: black;
+}
+
+.feedback__content .owl-theme .owl-dots .owl-dot span {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.feedback__content .owl-theme .owl-dots .owl-dot:focus {
+    outline: none;
+}
+
+/* ---------------- CONTACT ------------------ */
+.contact {
+    padding: 70px 0;
+}
+
+.contact__form form {
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 30px;
+}
+
+.contact__form input {
+    padding: 15px;
+}
+
+.contact__form textarea {
+    resize: none;
+}
+
+.contact__form textarea::placeholder {
+    color: black;
+}
+
+.contact__form textarea, .contact__form button {
+    grid-column: 1 / span 2;
+    padding: 15px;
+}
+
+.contact__form input, .contact__form textarea {
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+.contact__form button {
+    border-radius: 0;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.contact__form button:hover {
+    background-color: black;
+    color: #ffffff;
+    border-color: black;
+}
+
+.contact__form input:focus, .contact__form textarea:focus {
+    outline: none;
+}
+
+.contact__form input:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.contact__map iframe {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.contact__info {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contact__info i {
+    font-size: 2rem;
+    color: #4e2a84;
+}
+
+.contact__info p {
+    font-size: 0.8rem;
+    margin: 10px 0;
+}
+
+/* ---------------- FOOTER ------------------ */
+
+footer {
+    padding: 50px 0;
+    background-color: black;
+    color: white;
+}
+
+.footer__main {
+    width: 70%;
+    margin: 0 auto;
+    
+    display: flex;
+    padding-bottom: 50px;
+}
+.footer__item {
+    width: 25%;
+    padding: 0 20px;
+}
+.footer__item h3 {
+    font-size: 1.3rem;
+    color: #ff0e83;
+    margin-bottom: 1rem;
+}
+.footer__item p {
+    font-size: 0.8rem;
+    line-height: 28px;
+    padding-bottom: 1rem;
+}
+.footer__socials i {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    margin-right: 10px;
+    border: 1px solid white;
+    transition:all 0.5s ;
+}
+.footer__socials i:hover {
+    color: #ff0e83;
+    border-color: #ff0e83;
+}
+
+.footer__time {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dotted white;
+}
+.footer__time p {
+    padding: 0;
+    margin: 10px 0;
+}
+
+.footer__item .footer__sub input {
+    margin-bottom: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    border:1px solid black
+    
+}
+
+.footer__item .footer__sub input:focus {
+    outline: none;
+}
+
+.footer__item .footer__sub button {
+    padding:7px 16px;
+    color: black;
+    border-color: #ff0e83;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.footer__item .footer__sub button:hover {
+    border-color: black;
+}
+
+.footer__copyright {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.footer__copyright span {
+    color: #ff0e83;
+}
+
+/* --------- BACK TO TOP ---------- */
+.backToTop {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.backToTop i {
+    color: #0BBBCC;
+    border: 2px solid #0BBBCC;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 36px;
+}
+
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+  
+.cd-top--fade-out {
+    opacity: .5;
 }
