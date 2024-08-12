@@ -1,5 +1,4 @@
 *.pdf
 *.zip
-*.DS_Sttore
 node_modules/
 .DS_Store
