@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background-color: #151937;
+    color: #fff;
+}
+
+h2 {
+    font-size: 3.75rem;
+    line-height: 1;
+}
+
+.button-gardient {
+    background-image: linear-gradient(-90deg, #ff7df2, #ff275b);
+    border-radius: 1.5rem;
+    padding: .75rem 2rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.text-gardient {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #0000;
+    background-image: linear-gradient(270.78deg, #ffa7a9 4.19%, #ff5ea3 96.11%);
+}
+
+.trusted__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: .75rem;
+    background-color: rgb(255 255 255/var(--tw-bg-opacity));
+    --tw-bg-opacity: 0.05;
+    padding: 1.75rem;
+}
+
+.trusted__item h3 {
+    margin-top: 1.25rem;
+    margin-bottom: .75rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+}
+
+.trusted__item p,
+.trusted__item i {
+    --tw-text-opacity: 1;
+    color: rgb(156 163 175/var(--tw-text-opacity));
+}
+
+.trusted__item p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.trusted__item i {
+    margin-top: 1.25rem;
+    display: inline-block;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+
+.feed__back .sub-title {
+    margin-bottom: 1.25rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+    --tw-text-opacity: 0.5;
+}
+
+.feed__back .slick-dots {
+    bottom: -40px;
+}
+
+.feed__back .slick-dots li.slick-active button:before {
+    color: #ff5ea3;
+}
+
+.feed__back .slick-dots li button:before {
+    color: #fff;
+    opacity: 1;
+    font-size: 16px;
+}
+
+.input_custom {
+    background-color: unset;
+    border: none;
+    outline: none;
+}
+
+.footer__title {
+    margin-bottom: 1.25rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+}
+
+.footer__top-nav a {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    display: inline-block;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    --tw-text-opacity: 1;
+    color: rgb(156 163 175/var(--tw-text-opacity));
+}

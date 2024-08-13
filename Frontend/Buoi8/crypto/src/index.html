@@ -1,16 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html class="dark">
     <head>
+        <link
+            rel="shortcut icon"
+            href="./images/bank.png"
+            type="image/x-icon"
+        />
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="./output.css" rel="stylesheet" />
-        <title>Crypro</title>
+        <title>Cyber Crypto</title>
+
+        <!-- FONT AWESOME -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- SLICK -->
+        <link href="./css/slick.css" rel="stylesheet" />
+        <link href="./css/slick-theme.css" rel="stylesheet" />
+
+        <!-- MY CSS -->
+        <link href="./css/output.css" rel="stylesheet" />
     </head>
     <body>
         <header class="py-5">
             <nav class="w-full z-20 top-0 start-0">
                 <div
-                    class="flex flex-wrap items-center justify-between container p-4"
+                    class="flex flex-wrap items-center justify-between container p-4 mx-auto"
                 >
                     <a
                         href="https://flowbite.com/"
@@ -89,9 +109,573 @@
                 </div>
             </nav>
         </header>
-        <main></main>
-        <footer></footer>
+        <main>
+            <!-- BANNER -->
+            <section class="banner py-10 md:py-20 px-5 md:px-0">
+                <div class="container">
+                    <div
+                        class="banner_content flex flex-col-reverse md:flex-row items-center space-x-7"
+                    >
+                        <div class="banner__text w-full md:w-1/2 space-y-10">
+                            <h1
+                                class="text-5xl md:text-6xl xl:text-8xl font-bold"
+                            >
+                                Trsuted &amp; Secure
+                                <span class="text-gardient">Crypto</span> Market
+                                Exchange.
+                            </h1>
+                            <p class="text-2xl text-opacity-75 text-white">
+                                Already have a website? Try our hosting to alive
+                                it with industry-leading load times.
+                            </p>
+                            <div class="banner_action flex items-center">
+                                <button class="button-gardient">
+                                    Start Trading
+                                </button>
+                            </div>
+                            <div class="banner_rating mt-10">
+                                <h2 class="md:text-7xl text-4xl mb-5">
+                                    A+ Rating
+                                </h2>
+                                <p class="text-xl text-white text-opacity-50">
+                                    Avg rating 4.8 makes us world most best
+                                    apps.
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="banner__image w-full md:w-1/2 mb-10 md:mb-0"
+                        >
+                            <img
+                                src="./images/bank.png"
+                                class="w-2/3 md:w-full mx-auto md:mx-0"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
 
+            <!-- TRUSTED -->
+            <section class="trusted py-10">
+                <div class="container">
+                    <div class="trusted_title text-center">
+                        <h2 class="text-4xl md:text-6xl mb-3 leading-relaxed">
+                            Trusted
+                            <span class="text-gardient">Cryptocurrency</span>
+                            Platform
+                        </h2>
+                        <p
+                            class="text-white text-opacity-50 text-lg md:text-xl"
+                        >
+                            jano has a variety of features that make it the best
+                            place to start trading
+                        </p>
+                    </div>
+                    <div class="trusted__content">
+                        <div class="mb-4">
+                            <ul
+                                class="flex justify-center flex-wrap -mb-px text-sm font-medium text-center"
+                                id="default-styled-tab"
+                                data-tabs-toggle="#default-styled-tab-content"
+                                data-tabs-active-classes="text-purple-600 hover:text-purple-600 dark:text-purple-500 dark:hover:text-purple-500 border-purple-600 dark:border-purple-500"
+                                data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300"
+                                role="tablist"
+                            >
+                                <li class="me-2" role="presentation">
+                                    <button
+                                        class="inline-block p-4 border-b-2 rounded-t-lg"
+                                        id="profile-styled-tab"
+                                        data-tabs-target="#styled-profile"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="profile"
+                                        aria-selected="false"
+                                    >
+                                        Profile
+                                    </button>
+                                </li>
+                                <li class="me-2" role="presentation">
+                                    <button
+                                        class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                                        id="dashboard-styled-tab"
+                                        data-tabs-target="#styled-dashboard"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="dashboard"
+                                        aria-selected="false"
+                                    >
+                                        Contact
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="default-styled-tab-content">
+                            <div
+                                class="hidden p-4 rounded-lg"
+                                id="styled-profile"
+                                role="tabpanel"
+                                aria-labelledby="profile-tab"
+                            >
+                                <div
+                                    class="grid grid-cols-1 md:grid-cols-3 gap-7"
+                                >
+                                    <div class="trusted__item">
+                                        <img
+                                            src="./images/trusted_1.png"
+                                            alt="trusted"
+                                        />
+                                        <h3>Best Exchange Rate</h3>
+                                        <p>
+                                            Convert data noise intelligent for
+                                            quis lorem.
+                                        </p>
+                                        <i
+                                            class="fa-solid fa-arrow-right-long"
+                                        ></i>
+                                    </div>
+                                    <div class="trusted__item">
+                                        <img
+                                            src="./images/trusted_1.png"
+                                            alt="trusted"
+                                        />
+                                        <h3>Best Exchange Rate</h3>
+                                        <p>
+                                            Convert data noise intelligent for
+                                            quis lorem.
+                                        </p>
+                                        <i
+                                            class="fa-solid fa-arrow-right-long"
+                                        ></i>
+                                    </div>
+                                    <div class="trusted__item">
+                                        <img
+                                            src="./images/trusted_1.png"
+                                            alt="trusted"
+                                        />
+                                        <h3>Best Exchange Rate</h3>
+                                        <p>
+                                            Convert data noise intelligent for
+                                            quis lorem.
+                                        </p>
+                                        <i
+                                            class="fa-solid fa-arrow-right-long"
+                                        ></i>
+                                    </div>
+                                    <div class="trusted__item">
+                                        <img
+                                            src="./images/trusted_1.png"
+                                            alt="trusted"
+                                        />
+                                        <h3>Best Exchange Rate</h3>
+                                        <p>
+                                            Convert data noise intelligent for
+                                            quis lorem.
+                                        </p>
+                                        <i
+                                            class="fa-solid fa-arrow-right-long"
+                                        ></i>
+                                    </div>
+                                    <div class="trusted__item">
+                                        <img
+                                            src="./images/trusted_1.png"
+                                            alt="trusted"
+                                        />
+                                        <h3>Best Exchange Rate</h3>
+                                        <p>
+                                            Convert data noise intelligent for
+                                            quis lorem.
+                                        </p>
+                                        <i
+                                            class="fa-solid fa-arrow-right-long"
+                                        ></i>
+                                    </div>
+                                    <div class="trusted__item">
+                                        <img
+                                            src="./images/trusted_1.png"
+                                            alt="trusted"
+                                        />
+                                        <h3>Best Exchange Rate</h3>
+                                        <p>
+                                            Convert data noise intelligent for
+                                            quis lorem.
+                                        </p>
+                                        <i
+                                            class="fa-solid fa-arrow-right-long"
+                                        ></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="hidden p-4 rounded-lg"
+                                id="styled-dashboard"
+                                role="tabpanel"
+                                aria-labelledby="dashboard-tab"
+                            >
+                                <div
+                                    class="grid grid-cols-1 md:grid-cols-3 gap-7"
+                                >
+                                    <div class="trusted__item">
+                                        <img
+                                            src="./images/trusted_1.png"
+                                            alt="trusted"
+                                        />
+                                        <h3>Best Exchange Rate</h3>
+                                        <p>
+                                            Convert data noise intelligent for
+                                            quis lorem.
+                                        </p>
+                                        <i
+                                            class="fa-solid fa-arrow-right-long"
+                                        ></i>
+                                    </div>
+                                    <div class="trusted__item">
+                                        <img
+                                            src="./images/trusted_1.png"
+                                            alt="trusted"
+                                        />
+                                        <h3>Best Exchange Rate</h3>
+                                        <p>
+                                            Convert data noise intelligent for
+                                            quis lorem.
+                                        </p>
+                                        <i
+                                            class="fa-solid fa-arrow-right-long"
+                                        ></i>
+                                    </div>
+                                    <div class="trusted__item">
+                                        <img
+                                            src="./images/trusted_1.png"
+                                            alt="trusted"
+                                        />
+                                        <h3>Best Exchange Rate</h3>
+                                        <p>
+                                            Convert data noise intelligent for
+                                            quis lorem.
+                                        </p>
+                                        <i
+                                            class="fa-solid fa-arrow-right-long"
+                                        ></i>
+                                    </div>
+                                    <div class="trusted__item">
+                                        <img
+                                            src="./images/trusted_1.png"
+                                            alt="trusted"
+                                        />
+                                        <h3>Best Exchange Rate</h3>
+                                        <p>
+                                            Convert data noise intelligent for
+                                            quis lorem.
+                                        </p>
+                                        <i
+                                            class="fa-solid fa-arrow-right-long"
+                                        ></i>
+                                    </div>
+                                    <div class="trusted__item">
+                                        <img
+                                            src="./images/trusted_1.png"
+                                            alt="trusted"
+                                        />
+                                        <h3>Best Exchange Rate</h3>
+                                        <p>
+                                            Convert data noise intelligent for
+                                            quis lorem.
+                                        </p>
+                                        <i
+                                            class="fa-solid fa-arrow-right-long"
+                                        ></i>
+                                    </div>
+                                    <div class="trusted__item">
+                                        <img
+                                            src="./images/trusted_1.png"
+                                            alt="trusted"
+                                        />
+                                        <h3>Best Exchange Rate</h3>
+                                        <p>
+                                            Convert data noise intelligent for
+                                            quis lorem.
+                                        </p>
+                                        <i
+                                            class="fa-solid fa-arrow-right-long"
+                                        ></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FEEDBACK -->
+            <section class="feed__back py-10 md:py-20 px-5 sm:px-0">
+                <div class="feed__back_title text-center mb-10">
+                    <p class="sub-title">Feedback</p>
+                    <h2>
+                        Trsuted by <span class="text-gardient">Clients</span>
+                    </h2>
+                </div>
+                <div class="feed__back-content">
+                    <div class="feed__back-carousel">
+                        <div class="feed__back-item px-0 sm:px-5">
+                            <div
+                                class="py-10 px-14 bg-white bg-opacity-20 rounded-lg"
+                            >
+                                <div class="company mb-8">
+                                    <img src="./images/aven.png" alt="aven" />
+                                    <ul
+                                        class="flex items-center text-yellow-500 mt-3"
+                                    >
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p class="text-2xl mb-8">
+                                    Certainly from my perspective quis been a
+                                    great success with due WP giving us that
+                                    enterprises level assured quality.
+                                </p>
+                                <p class="cost text-lg font-bold">
+                                    Qulaity & Cost:
+                                    <span class="text-gray-400">15.00</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="feed__back-item px-0 sm:px-5">
+                            <div
+                                class="py-10 px-14 bg-white bg-opacity-20 rounded-lg"
+                            >
+                                <div class="company mb-8">
+                                    <img src="./images/aven.png" alt="aven" />
+                                    <ul
+                                        class="flex items-center text-yellow-500 mt-3"
+                                    >
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p class="text-2xl mb-8">
+                                    Certainly from my perspective quis been a
+                                    great success with due WP giving us that
+                                    enterprises level assured quality.
+                                </p>
+                                <p class="cost text-lg font-bold">
+                                    Qulaity & Cost:
+                                    <span class="text-gray-400">15.00</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="feed__back-item px-0 sm:px-5">
+                            <div
+                                class="py-10 px-14 bg-white bg-opacity-20 rounded-lg"
+                            >
+                                <div class="company mb-8">
+                                    <img src="./images/aven.png" alt="aven" />
+                                    <ul
+                                        class="flex items-center text-yellow-500 mt-3"
+                                    >
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p class="text-2xl mb-8">
+                                    Certainly from my perspective quis been a
+                                    great success with due WP giving us that
+                                    enterprises level assured quality.
+                                </p>
+                                <p class="cost text-lg font-bold">
+                                    Qulaity & Cost:
+                                    <span class="text-gray-400">15.00</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="feed__back-item px-0 sm:px-5">
+                            <div
+                                class="py-10 px-14 bg-white bg-opacity-20 rounded-lg"
+                            >
+                                <div class="company mb-8">
+                                    <img src="./images/aven.png" alt="aven" />
+                                    <ul
+                                        class="flex items-center text-yellow-500 mt-3"
+                                    >
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p class="text-2xl mb-8">
+                                    Certainly from my perspective quis been a
+                                    great success with due WP giving us that
+                                    enterprises level assured quality.
+                                </p>
+                                <p class="cost text-lg font-bold">
+                                    Qulaity & Cost:
+                                    <span class="text-gray-400">15.00</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="py-10 md:py-20 px-5 sm:px-0">
+            <div class="container">
+                <div
+                    class="footer__top bg-white bg-opacity-5 py-10 px-5 md:px-20 rounded-2xl flex flex-wrap items-baseline space-y-5 md:space-y-0"
+                >
+                    <div class="w-full md:flex-2">
+                        <h3 class="text-gardient text-4xl font-bold mb-8">
+                            Jano.
+                        </h3>
+                        <p class="text-xl">Join our newsletter</p>
+                        <div
+                            class="p-2 bg-white bg-opacity-5 rounded-lg my-3 max-w-96 flex items-center justify-between"
+                        >
+                            <input
+                                type="text"
+                                placeholder="Enter email"
+                                class="input_custom flex-1"
+                            />
+                            <button class="button-gardient !rounded-md">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                    <div class="w-1/2 md:w-full md:flex-1">
+                        <h3 class="footer__title">Links</h3>
+                        <ul class="footer__top-nav">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Demo the product</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-1/2 md:w-full md:flex-1">
+                        <h3 class="footer__title">Legal</h3>
+                        <ul class="footer__top-nav">
+                            <li><a href="#">Terms of use</a></li>
+                            <li><a href="#">Terms &amp; conditions</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">Cookie policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-1/2 md:w-full md:flex-1">
+                        <h3 class="footer__title">Products</h3>
+                        <ul class="footer__top-nav">
+                            <li><a href="#">Take the tour</a></li>
+                            <li><a href="#">Live chat</a></li>
+                            <li><a href="#">Self-service</a></li>
+                            <li><a href="#">Social</a></li>
+                            <li><a href="#">Collaboration</a></li>
+                            <li><a href="#">Jano Reviews</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JQUERY -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.5.2/jquery-migrate.min.js"
+            integrity="sha512-BzvgYEoHXuphX+g7B/laemJGYFdrq4fTKEo+B3PurSxstMZtwu28FHkPKXu6dSBCzbUWqz/rMv755nUwhjQypw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+
+        <!-- FLOWBITE -->
         <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+
+        <!-- SLICK -->
+        <script src="./js/slick.min.js"></script>
+        <script type="text/javascript">
+            $(".feed__back-carousel").slick({
+                dots: true,
+                slidesToShow: 1,
+                arrows: false,
+                responsive: [
+                    {
+                        breakpoint: 1536,
+                        settings: {
+                            arrows: false,
+                            slidesToShow: 3,
+                        },
+                    },
+                    {
+                        breakpoint: 1300,
+                        settings: {
+                            arrows: false,
+                            slidesToShow: 2,
+                        },
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            slidesToShow: 1,
+                        },
+                    },
+                ],
+            });
+        </script>
     </body>
 </html>
